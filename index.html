@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Pagina de cadastro</h1>
+    </header>
+        <h2>Adicione um endereço</h2>
+        <form id="form">
+            <div class="backGround">
+                <label for="nome">Nome completo</label>
+                <div class="caixaBox1">
+                    <input type="text" required id="nome" name="nome">
+                </div>
+                <p>Como aparece no seu RG ou CNH</p>
+                <label for="cpf">CPF</label>
+                <div class="caixaBox">
+                    <input type="cpf" required id="cpf" name="cpf">
+                </div>
+                <label for="cep">CEP</label>
+                <div class="caixaBox">
+                    <input type="cep" required id="cep" name="cep">
+                <a>Não sei o meu CEP</a>
+                </div>
+                <div class="containerCidade">
+                    <div>
+                        <label for="estado">Estado</label>
+                        <div class="caixaBox2">
+                            <input type="text" required id="estado" name="estado">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="cidade" >Cidade</label>
+                        <div class="caixaBox2">
+                            <input type="text" required id="cidade" name="cidade">
+                        </div>
+                    </div>
+                </div>
+                <label for="bairro">Bairro</label>
+                    <div class="caixaBox">
+                        <input type="text" required id="bairro" name="bairro">
+                    </div>
+                <div class="containerNumero">
+                    <div>
+                        <label for="rua">Rua/Avenida</label>
+                        <div class="caixaBox3">
+                            <input type="text" required id="rua" name="rua">
+                        </div>
+                    </div>
+                    <div>
+                    <label for="numero">Número</label>
+                        <div class="caixaBox4">
+                            <input type="number" required id="numero" name="numero">
+                            <label for="checkbox">Sem número</label>
+                            <input type="checkbox" id="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <label for="complemento">Complemento (opcional)</label>
+                <div class="caixaBox">
+                    <input type="text" id="complemento" name="complemento">
+                </div>
+                <div class="trabalhoCasa">
+                    <p>Este é seu trabalho ou casa?</p>
+                    <div class="inputRadio">
+                        <input type="radio" id="radio1" required name="op1">trabalho</input>
+                        <input type="radio" id="radio2" required  name="op1">casa</input>
+                    </div>
+                </div>
+                <label for="telefone">Telefone de contato</label>
+                    <div class="caixaBox">
+                        <input type="tel" required id="telefone" name="telefone">
+                    </div>
+                <label for="email">E-mail de contato</label>
+                    <div class="caixaBox">
+                        <input type="email" required id="email" name="email">
+                    </div>
+                <label for="informacao">Informmações adicionais deste endereço (opcional)</label>
+                <textarea id="informacao" name="informacao" placeholder="Descrição da fachada, pontos de referência, informações de segurança etc."></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form> 
+    <footer>
+        <p>
+            2024 &copy;Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
